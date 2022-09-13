@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BlazorDictionary.Projections.VoteService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
