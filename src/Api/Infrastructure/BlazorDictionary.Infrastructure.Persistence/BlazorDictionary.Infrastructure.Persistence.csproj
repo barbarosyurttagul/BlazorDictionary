@@ -6,4 +6,36 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Context\" />
+    <None Remove="Bogus" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Relational" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Polly" />
+    <None Remove="EntityConfigurations\" />
+    <None Remove="EntityConfigurations\Entry\" />
+    <None Remove="EntityConfigurations\EntryComment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Context\" />
+    <Folder Include="EntityConfigurations\" />
+    <Folder Include="EntityConfigurations\Entry\" />
+    <Folder Include="EntityConfigurations\EntryComment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Polly" Version="7.2.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\BlazorDictionary.Api.Domain\BlazorDictionary.Api.Domain.csproj" />
+  </ItemGroup>
 </Project>
